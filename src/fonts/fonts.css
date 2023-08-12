@@ -1,20 +1,20 @@
 @font-face {
   src: url(./Roboto/Roboto-Medium.ttf) format('truetype');
-  font-family: 'Roboto';
+  font-family: 'RobotoMedium';
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   src: url(./Roboto/Roboto-ThinItalic.ttf) format('truetype');
-  font-family: 'Roboto';
+  font-family: 'RobotoThinItalic';
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   src: url(./Roboto/Roboto-Regular.ttf) format('truetype');
-  font-family: 'Roboto';
+  font-family: 'RobotoRegular';
   font-weight: normal;
   font-display: swap;
 }
