@@ -1,0 +1,38 @@
+.button {
+  all: unset;
+  box-sizing: border-box;
+  width: 136px;
+  padding: 7px 0;
+  background-color: #251e47;
+  border: 1px solid #6d6d6d;
+  border-radius: 5px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  text-align: center;
+}
+
+.buttonSearch {
+  background-color: #fff;
+  color: #0c091d;
+  grid-area: enter;
+}
+
+.mainPageButton {
+  grid-area: main;
+}
+
+.guidesPageButton {
+  grid-area: guide;
+}
+
+.tierSheetsPageButton {
+  grid-area: tier;
+}
+
+.randomizerPageButton {
+  grid-area: randomizer;
+}

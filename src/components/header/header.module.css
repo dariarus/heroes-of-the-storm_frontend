@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 12px 97px 12px 55px;
+  background-color: #0c091d;
+  box-shadow: 0 5px 10px black;
+}
+
+.heading {
+  margin: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.span {
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.navWrap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(136px, auto) );
+  grid-template-rows: repeat(2, 32px);
+  /*grid-template-columns: repeat(4, 1fr);*/
+  /*grid-template-rows: auto auto;*/
+  grid-template-areas:
+    "search search . enter"
+    "main guide tier randomizer";
+  grid-auto-flow: column;
+  gap: 24px 9px;
+  max-width: 571px;
+}
+
