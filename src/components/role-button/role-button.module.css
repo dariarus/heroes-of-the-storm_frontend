@@ -1,0 +1,36 @@
+.listItem {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  all: unset;
+  width: 37px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+.buttonTank {
+  background: url(../../images/role-icon_tank.svg) center center no-repeat #251e47;
+}
+
+.buttonBruiser {
+  background: url(../../images/role-icon_bruiser.svg) center center no-repeat #251e47;
+}
+
+.buttonRangeAssassin {
+  background: url(../../images/role-icon_ranged-assassin.svg) center center no-repeat #251e47;
+}
+
+.buttonMeleeAssassin {
+  background: url(../../images/role-icon_melee-assassin.svg) center center no-repeat #251e47;
+}
+
+.buttonHealer {
+  background: url(../../images/role-icon_healer.svg) center center no-repeat #251e47;
+}
+
+.buttonSupport {
+  background: url(../../images/role-icon_support.svg) center center no-repeat #251E47;
+}

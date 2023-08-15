@@ -18,6 +18,7 @@
 }
 
 .span {
+  margin-top: 3px;
   font-size: 40px;
   line-height: 47px;
 }
@@ -26,8 +27,6 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(136px, auto) );
   grid-template-rows: repeat(2, 32px);
-  /*grid-template-columns: repeat(4, 1fr);*/
-  /*grid-template-rows: auto auto;*/
   grid-template-areas:
     "search search . enter"
     "main guide tier randomizer";
@@ -35,4 +34,3 @@
   gap: 24px 9px;
   max-width: 571px;
 }
-

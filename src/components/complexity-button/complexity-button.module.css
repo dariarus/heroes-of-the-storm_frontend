@@ -1,0 +1,39 @@
+.listItem {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 32px;
+  background-color: #251e47;
+  border-radius: 5px;
+}
+
+.button {
+  all: unset;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.buttonVeryEasy {
+  background-color: #00ff75;
+}
+
+.buttonEasy {
+  background-color: #adff00;
+}
+
+.buttonMedium {
+  background-color: #faff00;
+}
+
+.buttonHard {
+  background-color: #ffb800;
+}
+
+.buttonVeryHard {
+  background-color: #ff0000;
+}

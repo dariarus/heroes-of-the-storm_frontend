@@ -18,3 +18,10 @@
   font-weight: normal;
   font-display: swap;
 }
+
+@font-face {
+  src: url(./Roboto/Roboto-Thin.ttf) format('truetype');
+  font-family: 'RobotoThin';
+  font-weight: normal;
+  font-display: swap;
+}
