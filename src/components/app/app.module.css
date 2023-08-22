@@ -1,6 +1,10 @@
 .app {
-  width: 1024px;
+  width: 1440px;
   margin: auto;
-  background-color: rgba(21, 17, 54, .8);
 }
 
+.nav {
+  display: flex;
+  gap: 0 5px;
+  width: 100%;
+}
