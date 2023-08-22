@@ -6,9 +6,9 @@ import {TNavButton} from '../../types/props';
 export const NavButton: FunctionComponent<TNavButton> = (props) => {
   return (
     <button className={appButtonStyles.button}>
-      <p className={appButtonStyles.textWrap}>
+      {/*<p className={appButtonStyles.textWrap}>*/}
         {props.buttonName}
-      </p>
+      {/*</p>*/}
     </button>
   )
 }
