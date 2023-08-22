@@ -1,14 +1,21 @@
-import {FunctionComponent} from 'react';
+import {FunctionComponent, useState} from 'react';
 
 import appButtonStyles from './nav-button.module.css';
 import {TNavButton} from '../../types/props';
 
 export const NavButton: FunctionComponent<TNavButton> = (props) => {
+  const [showSpan, setShowSpan] = useState<boolean>(false);
+
   return (
-    <button className={appButtonStyles.button}>
-      {/*<p className={appButtonStyles.textWrap}>*/}
+    <div>
+      <button className={appButtonStyles.button}
+      onClick={() => {
+        setShowSpan(true)
+      }}>
+        <p className={appButtonStyles.textWrap}>
         {props.buttonName}
-      {/*</p>*/}
-    </button>
+        </p>
+      </button>
+    </div>
   )
 }
