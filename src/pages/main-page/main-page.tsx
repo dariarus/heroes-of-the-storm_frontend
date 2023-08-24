@@ -1,44 +1,50 @@
 import {FunctionComponent} from 'react';
 
 import mainPageStyles from './main-page.module.css';
-import {RoleButton} from '../../components/role-button/role-button';
-import {ComplexityButton} from '../../components/complexity-button/complexity-button';
+import {RoleCheckbox} from '../../components/role-checkbox/role-checkbox';
+import {ComplexityCheckbox} from '../../components/complexity-checkbox/complexity-checkbox';
+import {Checkbox} from '../../components/checkbox/checkbox';
 
 export const MainPage: FunctionComponent = () => {
   return (
-    <section>
-      <h2 className={mainPageStyles.heading}>ВСЕ 90 ГЕРОЕВ HEROES OF THE STORM, ГАЙДЫ, БИЛДЫ И МНОГОЕ ДРУГОЕ У ТЕБЯ ПОД
-        РУКОЙ</h2>
-      <article className={mainPageStyles.searchArea}>
-        {/*<div className={mainPageStyles.searchWrap}>*/}
-        {/*  <form className={mainPageStyles.searchHeroesForm}>*/}
-        {/*    <input placeholder="Поиск героя" className={mainPageStyles.searchHeroesInput}/>*/}
-        {/*  </form>*/}
-        {/*  <p className={mainPageStyles.text}>Роль:</p>*/}
-        {/*  <ul className={mainPageStyles.buttonsList}>*/}
-        {/*    <RoleButton role="tank"/>*/}
-        {/*    <RoleButton role="bruiser"/>*/}
-        {/*    <RoleButton role="range"/>*/}
-        {/*    <RoleButton role="melee"/>*/}
-        {/*    <RoleButton role="healer"/>*/}
-        {/*    <RoleButton role="support"/>*/}
-        {/*  </ul>*/}
-        {/*  <p className={mainPageStyles.text}>Сложность:</p>*/}
-        {/*  <ul className={mainPageStyles.buttonsList}>*/}
-        {/*    <ComplexityButton complexity="very easy"/>*/}
-        {/*    <ComplexityButton complexity="easy"/>*/}
-        {/*    <ComplexityButton complexity="medium"/>*/}
-        {/*    <ComplexityButton complexity="hard"/>*/}
-        {/*    <ComplexityButton complexity="very hard"/>*/}
-        {/*  </ul>*/}
-        {/*</div>*/}
-        {/*/!*<div className={mainPageStyles.checkboxWrap}>*!/*/}
-        {/*  <label htmlFor="checkbox" className={mainPageStyles.checkboxLabel}>*/}
-        {/*    <input type="checkbox" id="checkbox" className={mainPageStyles.checkbox}/>*/}
-        {/*    Показать только героев в <a href="#" target="_blank" className={mainPageStyles.link}>бесплатной ротации</a>*/}
-        {/*  </label>*/}
-        {/*/!*</div>*!/*/}
-      </article>
-    </section>
+    <div className={mainPageStyles.page}>
+      <section className={mainPageStyles.sectionHeroes}>
+        <article className={mainPageStyles.searchArea}>
+          <div className={mainPageStyles.searchWrap}>
+            <form className={mainPageStyles.searchHeroesForm}>
+              <input placeholder="Поиск героя" className={mainPageStyles.searchHeroesInput}/>
+            </form>
+            <Checkbox label={["Показать", <a href="#"
+                                             rel="noreferrer"
+                                             target="_blank"
+                                             className={mainPageStyles.link}>бесплатную ротацию героев
+            </a>]}/>
+          </div>
+          <div className={mainPageStyles.sortWrap}>
+            <div className={mainPageStyles.sortDetailsWrap}>
+              <p className={mainPageStyles.text}>Роль</p>
+              <ul className={mainPageStyles.buttonsList}>
+                <RoleCheckbox role="tank"/>
+                <RoleCheckbox role="bruiser"/>
+                <RoleCheckbox role="range"/>
+                <RoleCheckbox role="melee"/>
+                <RoleCheckbox role="healer"/>
+                <RoleCheckbox role="support"/>
+              </ul>
+            </div>
+            <div className={mainPageStyles.sortDetailsWrap}>
+              <ul className={`${mainPageStyles.buttonsList} ${mainPageStyles.listLastOfType}`}>
+                <ComplexityCheckbox complexity="very easy"/>
+                <ComplexityCheckbox complexity="easy"/>
+                <ComplexityCheckbox complexity="medium"/>
+                <ComplexityCheckbox complexity="hard"/>
+                <ComplexityCheckbox complexity="very hard"/>
+              </ul>
+              <p className={mainPageStyles.text}>Сложность</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
   )
 }

@@ -1,8 +1,8 @@
 import {FunctionComponent} from 'react';
 
-import roleButtonStyles from './role-button.module.css';
+import roleButtonStyles from './role-checkbox.module.css';
 
-export const RoleButton: FunctionComponent<{ role: string }> = (props) => {
+export const RoleCheckbox: FunctionComponent<{ role: string }> = (props) => {
   return (
     <li className={roleButtonStyles.listItem}>
       <button type="button" className={

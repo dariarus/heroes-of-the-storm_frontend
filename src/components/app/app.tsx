@@ -14,7 +14,7 @@ function App() {
         <NavButton buttonName="ТИРЛИСТЫ"/>
         <NavButton buttonName="РАНДОМАЙЗЕР"/>
       </nav>
-      {/*<MainPage/>*/}
+      <MainPage/>
     </main>
   );
 }

@@ -7,33 +7,38 @@
   padding: 0;
   width: 35px;
   height: 32px;
-  background-color: #251e47;
-  border-radius: 5px;
 }
 
-.button {
-  all: unset;
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
   width: 27px;
   height: 27px;
   border-radius: 50%;
+  opacity: 100%;
+  cursor: pointer;
 }
 
-.buttonVeryEasy {
+.checkbox:not(:checked) {
+  opacity: 50%;
+}
+
+.veryEasy {
   background-color: #00ff75;
 }
 
-.buttonEasy {
+.easy {
   background-color: #adff00;
 }
 
-.buttonMedium {
+.medium {
   background-color: #faff00;
 }
 
-.buttonHard {
+.hard {
   background-color: #ffb800;
 }
 
-.buttonVeryHard {
+.veryHard {
   background-color: #ff0000;
 }

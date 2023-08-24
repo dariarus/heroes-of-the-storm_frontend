@@ -1,16 +1,21 @@
-.heading {
-  margin: 28px auto 48px;
-  max-width: 679px;
-  font-family: 'RobotoRegular', 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
+.page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 59px 46px;
+}
+
+.sectionHeroes {
+  flex-basis: 75%;
+  padding: 30px 0;
+  border: 2px solid #0085ff;
+  border-radius: 20px;
 }
 
 .searchArea {
-  padding: 0 16px 15px;
+  padding: 0 30px 12px;
+  border-bottom: 2px solid #0085ff;
 }
 
 .searchWrap {
@@ -39,7 +44,7 @@
 }
 
 .searchHeroesInput:focus {
-  outline: 2px solid #382f66;
+  outline: 2px solid #31ceff;
 }
 
 .searchHeroesInput::placeholder {
@@ -49,6 +54,34 @@
   font-size: 20px;
   line-height: 23px;
   color: #d1d1d1;
+}
+
+.link {
+  margin-left: 6px;
+  font-family: 'RobotoMedium', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #31ceff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.sortWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sortDetailsWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .text {
@@ -66,20 +99,11 @@
   align-items: flex-start;
   justify-content: center;
   gap: 0 7px;
-  margin: 0 20px 0 0;
+  margin: 0 0 0 20px;
   padding: 0;
 }
 
-.checkboxLabel {
-  font-family: 'RobotoThin', 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 23px;
-  color: #d1d1d1;
-}
-
-.checkbox {
-  margin: 16px 0 0;
+.listLastOfType {
+  margin: 0 20px 0 0;
 }
 
