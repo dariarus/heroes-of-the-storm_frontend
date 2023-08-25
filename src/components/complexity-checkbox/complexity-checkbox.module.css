@@ -9,6 +9,10 @@
   height: 32px;
 }
 
+input[type="checkbox"] {
+  opacity: 100%;
+}
+
 .checkbox {
   -webkit-appearance: none;
   appearance: none;
@@ -17,6 +21,10 @@
   border-radius: 50%;
   opacity: 100%;
   cursor: pointer;
+}
+
+.checkbox:checked {
+  opacity: 100%;
 }
 
 .checkbox:not(:checked) {
