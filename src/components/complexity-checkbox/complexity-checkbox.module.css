@@ -9,27 +9,30 @@
   height: 32px;
 }
 
-input[type="checkbox"] {
-  opacity: 100%;
-}
-
 .checkbox {
   -webkit-appearance: none;
   appearance: none;
   width: 27px;
   height: 27px;
   border-radius: 50%;
-  opacity: 100%;
   cursor: pointer;
+}
+
+.checkboxActive {
+  opacity: 100%;
 }
 
 .checkbox:checked {
   opacity: 100%;
 }
 
-.checkbox:not(:checked) {
+.checkboxInactive {
   opacity: 50%;
 }
+
+/*.checkbox:not(:checked) {*/
+/*  opacity: 50%;*/
+/*}*/
 
 .veryEasy {
   background-color: #00ff75;

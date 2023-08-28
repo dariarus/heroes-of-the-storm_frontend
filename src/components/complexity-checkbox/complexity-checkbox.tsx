@@ -1,41 +1,49 @@
-import {FunctionComponent} from 'react';
+import {FunctionComponent, useState} from 'react';
 
 import complexityButtonStyles from './complexity-checkbox.module.css';
+import {TComplexityCheckbox} from '../../types/props';
 
-export const ComplexityCheckbox: FunctionComponent<{ complexity: string }> = (props) => {
-
-
+export const ComplexityCheckbox: FunctionComponent<TComplexityCheckbox> = (props) => {
   return (
     <li className={complexityButtonStyles.listItem}>
       <input type="checkbox" className=
         {(() => {
+          let checkboxCompleteStyle;
           let checkboxStyle = `${complexityButtonStyles.checkbox} `;
+          let checkboxStyleActive = `${complexityButtonStyles.checkboxActive} `;
+          let checkboxStyleInactive = `${complexityButtonStyles.checkboxInactive} `;
+
+          if (props.isActive) {
+            checkboxStyle = checkboxStyle + checkboxStyleActive;
+          } else {
+            checkboxStyle = checkboxStyle + checkboxStyleInactive;
+          }
+
           switch (props.complexity) {
             case 'very easy':
-              checkboxStyle = checkboxStyle + `${complexityButtonStyles.veryEasy}`;
+              checkboxCompleteStyle = checkboxStyle + `${complexityButtonStyles.veryEasy}`;
               break;
 
             case 'easy':
-              checkboxStyle = checkboxStyle + `${complexityButtonStyles.easy}`;
+              checkboxCompleteStyle = checkboxStyle + `${complexityButtonStyles.easy}`;
               break;
 
             case 'medium':
-              checkboxStyle = checkboxStyle + `${complexityButtonStyles.medium}`;
+              checkboxCompleteStyle = checkboxStyle + `${complexityButtonStyles.medium}`;
               break;
 
             case 'hard':
-              checkboxStyle = checkboxStyle + `${complexityButtonStyles.hard}`;
+              checkboxCompleteStyle = checkboxStyle + `${complexityButtonStyles.hard}`;
               break;
 
             case 'very hard':
-              checkboxStyle = checkboxStyle + `${complexityButtonStyles.veryHard}`;
+              checkboxCompleteStyle = checkboxStyle + `${complexityButtonStyles.veryHard}`;
               break;
           }
 
-          // switch (checked)
-
-          return checkboxStyle;
-        })()}>
+          return checkboxCompleteStyle;
+        })()}
+             onChange={props.onChange}>
 
         {/*       props.complexity=== 'very easy'*/}
         {/*? `${complexityButtonStyles.checkbox} ${complexityButtonStyles.veryEasy}`*/}
