@@ -1,36 +1,47 @@
 .listItem {
   list-style: none;
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
-.button {
-  all: unset;
-  width: 37px;
-  height: 32px;
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 38px;
+  height: 38px;
   border-radius: 5px;
 }
 
-.buttonTank {
-  background: url(../../images/role-icon_tank.svg) center center no-repeat #251e47;
+.checkboxActive {
+  opacity: 100%;
 }
 
-.buttonBruiser {
-  background: url(../../images/role-icon_bruiser.svg) center center no-repeat #251e47;
+.checkboxInactive {
+  opacity: 50%;
 }
 
-.buttonRangeAssassin {
-  background: url(../../images/role-icon_ranged-assassin.svg) center center no-repeat #251e47;
+.tank {
+  background: url(../../images/role-icon_tank.svg) center center no-repeat;
 }
 
-.buttonMeleeAssassin {
-  background: url(../../images/role-icon_melee-assassin.svg) center center no-repeat #251e47;
+.bruiser {
+  background: url(../../images/role-icon_bruiser.svg) center center no-repeat;
 }
 
-.buttonHealer {
-  background: url(../../images/role-icon_healer.svg) center center no-repeat #251e47;
+.rangeAssassin {
+  background: url(../../images/role-icon_ranged-assassin.svg) center center no-repeat;
 }
 
-.buttonSupport {
-  background: url(../../images/role-icon_support.svg) center center no-repeat #251E47;
+.meleeAssassin {
+  background: url(../../images/role-icon_melee-assassin.svg) center center no-repeat;
+}
+
+.healer {
+  background: url(../../images/role-icon_healer.svg) center center no-repeat;
+}
+
+.support {
+  background: url(../../images/role-icon_support.svg) center center no-repeat;
 }

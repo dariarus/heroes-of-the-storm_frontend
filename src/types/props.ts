@@ -8,6 +8,12 @@ export type TShowRotationCheckbox = {
 
 export type TComplexityCheckbox = {
   complexity: string,
-  isActive?: boolean,
-  onChange?: () => void;
+  isActive: boolean,
+  onChange: () => void;
+}
+
+export type TRoleCheckbox = {
+  role: string,
+  isActive: boolean,
+  onChange: () => void;
 }

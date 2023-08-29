@@ -2,22 +2,53 @@ import {FunctionComponent} from 'react';
 
 import roleButtonStyles from './role-checkbox.module.css';
 
-export const RoleCheckbox: FunctionComponent<{ role: string }> = (props) => {
+import {TRoleCheckbox} from '../../types/props';
+
+export const RoleCheckbox: FunctionComponent<TRoleCheckbox> = (props) => {
   return (
     <li className={roleButtonStyles.listItem}>
-      <button type="button" className={
-        props.role === 'tank'
-          ? `${roleButtonStyles.button} ${roleButtonStyles.buttonTank}`
-          : props.role === 'bruiser'
-            ? `${roleButtonStyles.button} ${roleButtonStyles.buttonBruiser}`
-            : props.role === 'range'
-              ? `${roleButtonStyles.button} ${roleButtonStyles.buttonRangeAssassin}`
-              : props.role === 'melee'
-                ? `${roleButtonStyles.button} ${roleButtonStyles.buttonMeleeAssassin}`
-                : props.role === 'healer'
-                  ? `${roleButtonStyles.button} ${roleButtonStyles.buttonHealer}`
-                  : `${roleButtonStyles.button} ${roleButtonStyles.buttonSupport}`
-      }></button>
+      <input type="checkbox" className={
+        (() => {
+          let checkboxCompleteStyle;
+          let checkboxStyle = `${roleButtonStyles.checkbox} `;
+          let checkboxStyleActive = `${roleButtonStyles.checkboxActive} `;
+          let checkboxStyleInactive = `${roleButtonStyles.checkboxInactive} `;
+
+          if (props.isActive) {
+            checkboxStyle = checkboxStyle + checkboxStyleActive;
+          } else {
+            checkboxStyle = checkboxStyle + checkboxStyleInactive;
+          }
+
+          switch (props.role) {
+            case 'tank':
+              checkboxCompleteStyle = checkboxStyle + `${roleButtonStyles.tank}`;
+              break;
+
+            case 'bruiser':
+              checkboxCompleteStyle = checkboxStyle + `${roleButtonStyles.bruiser}`;
+              break;
+
+            case 'range':
+              checkboxCompleteStyle = checkboxStyle + `${roleButtonStyles.rangeAssassin}`;
+              break;
+
+            case 'melee':
+              checkboxCompleteStyle = checkboxStyle + `${roleButtonStyles.meleeAssassin}`;
+              break;
+
+            case 'healer':
+              checkboxCompleteStyle = checkboxStyle + `${roleButtonStyles.healer}`;
+              break;
+
+            case 'support':
+              checkboxCompleteStyle = checkboxStyle + `${roleButtonStyles.support}`;
+              break;
+          }
+          return checkboxCompleteStyle;
+        })()}
+             onChange={props.onChange}>
+      </input>
     </li>
   )
 }

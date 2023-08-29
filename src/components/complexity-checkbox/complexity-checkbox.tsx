@@ -1,4 +1,4 @@
-import {FunctionComponent, useState} from 'react';
+import {FunctionComponent} from 'react';
 
 import complexityButtonStyles from './complexity-checkbox.module.css';
 import {TComplexityCheckbox} from '../../types/props';
@@ -44,17 +44,6 @@ export const ComplexityCheckbox: FunctionComponent<TComplexityCheckbox> = (props
           return checkboxCompleteStyle;
         })()}
              onChange={props.onChange}>
-
-        {/*       props.complexity=== 'very easy'*/}
-        {/*? `${complexityButtonStyles.checkbox} ${complexityButtonStyles.veryEasy}`*/}
-        {/*: props.complexity === 'easy'*/}
-        {/*? `${complexityButtonStyles.checkbox} ${complexityButtonStyles.easy}`*/}
-        {/*: props.complexity === 'medium'*/}
-        {/*? `${complexityButtonStyles.checkbox} ${complexityButtonStyles.medium}`*/}
-        {/*: props.complexity === 'hard'*/}
-        {/*? `${complexityButtonStyles.checkbox} ${complexityButtonStyles.hard}`*/}
-        {/*: `${complexityButtonStyles.checkbox} ${complexityButtonStyles.veryHard}`*/}
-        {/*}>*/}
       </input>
     </li>
   )
