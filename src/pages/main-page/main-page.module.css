@@ -119,3 +119,12 @@
 .checkboxesListOpacity:has(input:checked) input:checked {
   opacity: 1
 }
+
+
+.heroesArea {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px 45px;
+  box-sizing: border-box;
+  padding: 18px 80px;
+}

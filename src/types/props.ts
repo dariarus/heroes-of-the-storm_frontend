@@ -15,5 +15,11 @@ export type TComplexityCheckbox = {
 export type TRoleCheckbox = {
   role: string,
   isActive: boolean,
-  onChange: () => void;
+  onChange: () => void
+}
+
+export type THeroCard = {
+  name: string,
+  image: string,
+  icon: string
 }
