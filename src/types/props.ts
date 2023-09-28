@@ -1,5 +1,8 @@
 export type TNavButton = {
   buttonName: string,
+  id: string,
+  onClick: (e: any) => void,
+  isActive: string
 }
 
 export type TShowRotationCheckbox = {

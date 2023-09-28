@@ -1,3 +1,8 @@
+.buttonWrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   all: unset;
   position: relative;
@@ -20,7 +25,7 @@
 
 .button:focus,
 .button:active {
-  box-shadow: 0 18px 15px -5px rgba(0, 133, 255, .5);
+  /*box-shadow: 0 18px 15px -5px rgba(0, 133, 255, .5);*/
   color: #0085ff;
 }
 
@@ -46,7 +51,7 @@
   transform: scaleX(1);
 }
 
-.textWrap {
+.text {
   margin: 16px 0;
   font-family: 'RobotoRegular', 'Arial', sans-serif;
   font-style: normal;
@@ -57,8 +62,21 @@
   transition: color .5s;
 }
 
-.button:hover .textWrap,
-.button:active .textWrap,
-.button:focus .textWrap{
+.button:hover .text,
+.button:active .text,
+.button:focus .text{
   color: #0085ff;
+}
+
+.shadowSpan {
+  /*display: none;*/
+  margin-top: 12px;
+  width: 100%;
+  box-shadow: 0 0 10px 3px rgba(0, 133, 255, 1);
+  z-index: 3;
+}
+
+.button:active .shadowSpan,
+.button:focus .shadowSpan {
+
 }

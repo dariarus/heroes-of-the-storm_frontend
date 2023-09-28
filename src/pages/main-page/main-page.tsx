@@ -7,6 +7,7 @@ import {ComplexityCheckbox} from '../../components/complexity-checkbox/complexit
 import {RotationShowingCheckbox} from '../../components/checkbox/checkbox';
 import {mockHeroesData} from '../../utils/constants';
 import {HeroCard} from '../../components/hero-card/hero-card';
+import {Sidebar} from '../../components/sidebar/sidebar';
 
 
 export const MainPage: FunctionComponent = () => {
@@ -72,12 +73,15 @@ export const MainPage: FunctionComponent = () => {
         </article>
         <article className={mainPageStyles.heroesArea}>
           {
-            mockHeroesData.map((hero, index) => (
-                <HeroCard name={hero.name} icon={hero.icon} image={hero.image}/>
+            mockHeroesData.map((hero) => (
+                <HeroCard key={hero.id} name={hero.name} icon={hero.icon} image={hero.image}/>
               )
             )
           }
         </article>
+      </section>
+      <section>
+        <Sidebar/>
       </section>
     </div>
   )
