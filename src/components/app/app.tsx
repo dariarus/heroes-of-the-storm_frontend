@@ -19,14 +19,10 @@ function App() {
     <main className={appStyles.app}>
       <Header/>
       <nav className={appStyles.nav}>
-        <NavButton buttonName="ГЛАВНАЯ" id={"1"} isActive={buttonIsActive} onClick={handleButtonIsActive}/>
-        <NavButton buttonName="ГАЙДЫ" id={"2"} isActive={buttonIsActive} onClick={handleButtonIsActive}/>
-        {/*<NavButton buttonName="ТИРЛИСТЫ" id="3" onClick={(e) => {*/}
-        {/*  handleButtonIsActive(e)*/}
-        {/*}}/>*/}
-        {/*<NavButton buttonName="РАНДОМАЙЗЕР" id="4" onClick={(e) => {*/}
-        {/*  handleButtonIsActive(e)*/}
-        {/*}}/>*/}
+        <NavButton buttonName="ГЛАВНАЯ" id="1" isActive={buttonIsActive} onClick={handleButtonIsActive}/>
+        <NavButton buttonName="ГАЙДЫ" id="2" isActive={buttonIsActive} onClick={handleButtonIsActive}/>
+        <NavButton buttonName="ТИРЛИСТЫ" id="3" isActive={buttonIsActive} onClick={handleButtonIsActive}/>
+        <NavButton buttonName="РАНДОМАЙЗЕР" id="4" isActive={buttonIsActive} onClick={handleButtonIsActive}/>
       </nav>
       <MainPage/>
     </main>
