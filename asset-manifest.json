@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/heroes-of-the-storm_frontend/static/css/main.f80f284b.css",
+    "main.js": "/heroes-of-the-storm_frontend/static/js/main.40b44e67.js",
+    "static/js/787.43560ec5.chunk.js": "/heroes-of-the-storm_frontend/static/js/787.43560ec5.chunk.js",
+    "static/media/header-background.jpg": "/heroes-of-the-storm_frontend/static/media/header-background.c1f518accae8ee2649b8.jpg",
+    "static/media/Roboto-ThinItalic.ttf": "/heroes-of-the-storm_frontend/static/media/Roboto-ThinItalic.9d2ca34eae96e77c6eef.ttf",
+    "static/media/Roboto-Medium.ttf": "/heroes-of-the-storm_frontend/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Thin.ttf": "/heroes-of-the-storm_frontend/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
+    "static/media/Roboto-Regular.ttf": "/heroes-of-the-storm_frontend/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/enter-icon_black.svg": "/heroes-of-the-storm_frontend/static/media/enter-icon_black.6a65a4a9aa9450f5198f.svg",
+    "static/media/role-icon_tank.svg": "/heroes-of-the-storm_frontend/static/media/role-icon_tank.a39fc110077cf6205c21.svg",
+    "static/media/role-icon_support.svg": "/heroes-of-the-storm_frontend/static/media/role-icon_support.7ea45e211490b721f9e8.svg",
+    "static/media/role-icon_bruiser.svg": "/heroes-of-the-storm_frontend/static/media/role-icon_bruiser.0f150b4d791a37d5a91e.svg",
+    "static/media/role-icon_ranged-assassin.svg": "/heroes-of-the-storm_frontend/static/media/role-icon_ranged-assassin.ea78bd0afb1c1b5f3d72.svg",
+    "static/media/role-icon_melee-assassin.svg": "/heroes-of-the-storm_frontend/static/media/role-icon_melee-assassin.4c974a4d98f3f45ebd06.svg",
+    "static/media/role-icon_healer.svg": "/heroes-of-the-storm_frontend/static/media/role-icon_healer.3aaec420bda18a7af393.svg",
+    "static/media/enter-icon_white.svg": "/heroes-of-the-storm_frontend/static/media/enter-icon_white.7e6d4652e67b483f5d18.svg",
+    "index.html": "/heroes-of-the-storm_frontend/index.html",
+    "main.f80f284b.css.map": "/heroes-of-the-storm_frontend/static/css/main.f80f284b.css.map",
+    "main.40b44e67.js.map": "/heroes-of-the-storm_frontend/static/js/main.40b44e67.js.map",
+    "787.43560ec5.chunk.js.map": "/heroes-of-the-storm_frontend/static/js/787.43560ec5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f80f284b.css",
+    "static/js/main.40b44e67.js"
+  ]
+}
