@@ -1,9 +1,15 @@
 {
   "files": {
     "main.css": "/heroes-of-the-storm_frontend/static/css/main.f80f284b.css",
-    "main.js": "/heroes-of-the-storm_frontend/static/js/main.40b44e67.js",
+    "main.js": "/heroes-of-the-storm_frontend/static/js/main.bf6702b9.js",
     "static/js/787.43560ec5.chunk.js": "/heroes-of-the-storm_frontend/static/js/787.43560ec5.chunk.js",
+    "static/media/alextrasza.jpg": "/heroes-of-the-storm_frontend/static/media/alextrasza.8f49f6b6c46a0f240460.jpg",
+    "static/media/anduin.jpg": "/heroes-of-the-storm_frontend/static/media/anduin.d6667d3cf608860e3ef3.jpg",
+    "static/media/azmodan.jpg": "/heroes-of-the-storm_frontend/static/media/azmodan.9d910aad30a2e252f2b7.jpg",
+    "static/media/abathur.jpg": "/heroes-of-the-storm_frontend/static/media/abathur.210372b260725728a91e.jpg",
     "static/media/header-background.jpg": "/heroes-of-the-storm_frontend/static/media/header-background.c1f518accae8ee2649b8.jpg",
+    "static/media/ana.jpg": "/heroes-of-the-storm_frontend/static/media/ana.a9d060e33d0d901daf05.jpg",
+    "static/media/alarak.jpg": "/heroes-of-the-storm_frontend/static/media/alarak.0e6204b1156acf9d92c1.jpg",
     "static/media/Roboto-ThinItalic.ttf": "/heroes-of-the-storm_frontend/static/media/Roboto-ThinItalic.9d2ca34eae96e77c6eef.ttf",
     "static/media/Roboto-Medium.ttf": "/heroes-of-the-storm_frontend/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
     "static/media/Roboto-Thin.ttf": "/heroes-of-the-storm_frontend/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
@@ -18,11 +24,11 @@
     "static/media/enter-icon_white.svg": "/heroes-of-the-storm_frontend/static/media/enter-icon_white.7e6d4652e67b483f5d18.svg",
     "index.html": "/heroes-of-the-storm_frontend/index.html",
     "main.f80f284b.css.map": "/heroes-of-the-storm_frontend/static/css/main.f80f284b.css.map",
-    "main.40b44e67.js.map": "/heroes-of-the-storm_frontend/static/js/main.40b44e67.js.map",
+    "main.bf6702b9.js.map": "/heroes-of-the-storm_frontend/static/js/main.bf6702b9.js.map",
     "787.43560ec5.chunk.js.map": "/heroes-of-the-storm_frontend/static/js/787.43560ec5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f80f284b.css",
-    "static/js/main.40b44e67.js"
+    "static/js/main.bf6702b9.js"
   ]
 }
